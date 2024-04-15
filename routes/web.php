@@ -32,7 +32,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-
 // Rutas de comunas
 Route::middleware('auth')->group(function () {
     Route::get('/comunas', [ComunaController::class, 'index'])->name('comunas.index');
@@ -46,7 +45,6 @@ Route::middleware('auth')->group(function () {
 
 // Rutas de municipios
 Route::middleware('auth')->group(function () { 
-
 Route::get('/municipios', [MunicipioController::class, 'index'])->name('municipios.index');
 Route::post('/municipios', [MunicipioController::class, 'store'])->name('municipios.store');
 Route::get('/municipios/create', [MunicipioController::class, 'create'])->name('municipios.create');
@@ -58,7 +56,6 @@ Route::get('/municipios/{municipio}/edit', [MunicipioController::class, 'edit'])
 
 // Rutas de departamentos
 Route::middleware('auth')->group(function () { 
-
 Route::get('/departamentos', [DepartamentoController::class, 'index'])->name('departamentos.index');
 Route::post('/departamentos', [DepartamentoController::class, 'store'])->name('departamentos.store');
 Route::get('/departamentos/create', [DepartamentoController::class, 'create'])->name('departamentos.create');
@@ -78,7 +75,5 @@ Route::middleware('auth')->group(function () {
     Route::get('/paises/{pais}/edit', [PaisController::class, 'edit'])->name('paises.edit');
     
 }); 
-
-
 
 require __DIR__ . '/auth.php';
