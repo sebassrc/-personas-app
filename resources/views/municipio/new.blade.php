@@ -21,7 +21,7 @@
                 <select name="department_code" id="department" class="form-select rounded-md shadow-sm mt-1 block w-full" required>
                     <option value="" disabled selected>Seleccione un departamento</option>
                     @foreach($departamentos as $departamento)
-                        <option value="{{ $departamento->depa_codi }}">{{ $departamento->depa_nomb }}</option>
+                    <option value="{{ $departamento->depa_codi }}">{{ $departamento->depa_nomb }}</option>
                     @endforeach
                 </select>
             </div>
@@ -33,4 +33,5 @@
             </div>
         </form>
     </div>
+    @include('footer')
 </x-app-layout>

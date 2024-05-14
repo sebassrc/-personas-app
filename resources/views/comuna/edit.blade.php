@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Edit Comuna') }}
+            {{ __('Editar Comuna') }}
         </h2>
     </x-slot>
     <div class="container">
@@ -26,7 +26,8 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Guardar</button>
-            <a href="#" class="btn btn-secondary">Cancelar</a>
+            <a href="" class="btn btn-secondary">Cancelar</a>
         </form>
     </div>
+    @include('footer')
 </x-app-layout>

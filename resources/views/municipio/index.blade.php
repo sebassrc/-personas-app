@@ -6,7 +6,6 @@
     </x-slot>
 
     <div class="container mx-auto py-6">
-        <a href="{{ route('municipios.create') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mb-4">Agregar</a>
         <table class="table-auto w-full">
             <thead>
                 <tr>
@@ -14,6 +13,8 @@
                     <th class="px-4 py-2">Municipio</th>
                     <th class="px-4 py-2">Departamento</th>
                     <th class="px-4 py-2">Acciones</th>
+                    <th><a href="{{ route('municipios.create') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mb-4">Agregar</a>
+        </th>
                 </tr>
             </thead>
             <tbody>
@@ -35,4 +36,5 @@
             </tbody>
         </table>
     </div>
+    @include('footer')
 </x-app-layout>
